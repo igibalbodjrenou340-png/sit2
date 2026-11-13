@@ -8,7 +8,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
 }
 
 .logo a{
@@ -23,8 +22,8 @@ section{
     flex-direction: column;
 }
 
-nav{
-    width: 70%;
+.nav{
+    width: 60%;
 }
 
 ul{
@@ -49,8 +48,9 @@ a{
 
 h1{
     width: 40%;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
+    margin-top: 40px;
 }
 
 .hero-text{
@@ -59,14 +59,41 @@ h1{
     color: white;
 }
 
+.logo i{
+    font-size: 30px;
+}
+
+.contoure{
+    width: 18%;
+    border-radius: 30px;
+    background-color: rgb(201, 201, 201);
+}
+
+.ctn{
+    border-radius: 30px;
+    background-color: rgb(201, 201, 201);
+    padding: 2px 10px;
+}
+
+.contoure, .fa-solid fa-arrow-right{
+    color: white;
+    position: relative;
+}
+
+.contoure i{
+    position: relative;
+    left: 35%;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 10px 40px;
+    padding: 20px 90px;
     background: url(image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 input{
@@ -86,14 +113,15 @@ input :hover{
 }
 
 .search{
+    margin-top: 40px;
     width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 30px;
     position: relative;
-    top: 38px;
+    top: 45px;
     left: 250px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -109,13 +137,20 @@ input :hover{
 }
 
 .bouton-search{
-    width: 10%;
+    position: relative;
+    left: 15px;
+    width: 15%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #00365c;
-    border-radius: 30px;
-    padding: 10px ;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(53, 52, 52, 0.3);
+}
+
+.bouton-search, i{
+    color: white;
 }
 
 .most-viewed{
@@ -135,15 +170,18 @@ input :hover{
 }
 
 img{
+    height: 300px;
     width: 100%;
 }
 
 .most-viewed-item{
+    margin-top: 30px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 30%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(53, 52, 52, 0.9);
     border-radius: 10px;
 }
 
@@ -155,7 +193,6 @@ img{
 
 .div{
     font-weight: bold;
-    padding: 0px 15px;
 }
 
 .most-view{
@@ -270,12 +307,12 @@ img{
 
     h1{
         font-size: 20px;
-        width: 70%; 
+        width: 100%; 
         box-sizing: border-box;
     }
 
     .hero-text{
-        width: 50%;
+        width: 100%;
     }
 
     .logo{
@@ -299,7 +336,26 @@ img{
     }
 
     .most-viewed-item{
-        width: 100% !important;
+        width: 100%;
+    }
+
+    .contoure{
+        width: 100%;
+    }
+
+    .div{
+        font-size: 7px;
+    }
+
+    .bouton-search{
+        padding: 10px 30px;
+        position: relative;
+        left: 8px;
+    }
+
+    .bouton-search, li a, i{
+        font-size: 12px;
+        justify-content: center;
     }
 }
 
@@ -345,6 +401,25 @@ img{
     .most-viewed-item{
         width: 100%;
     }
+
+     .contoure{
+        width: 100%;
+    }
+
+    .div{
+        font-size: 7px;
+    }
+
+    .bouton-search{
+        padding: 10px 30px;
+        position: relative;
+        left: 8px;
+    }
+
+    .bouton-search, li a, i{
+        font-size: 12px;
+        justify-content: center;
+    }
 }
 
 @media (max-width:440px) {
@@ -388,5 +463,24 @@ img{
 
     .most-viewed-item{
         width: 100%;
+    }
+
+     .contoure{
+        width: 100%;
+    }
+
+    .div{
+        font-size: 7px;
+    }
+
+    .bouton-search{
+        padding: 10px 30px;
+        position: relative;
+        left: 8px;
+    }
+
+    .bouton-search, li a, i{
+        font-size: 12px;
+        justify-content: center;
     }
 }
